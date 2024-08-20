@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
   constructor(){
+    console.log("CUCU nao esperavas por mim")
     throw new Error('Error Test');
 
     console.log("Hello")
