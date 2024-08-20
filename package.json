@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && npm run sentry:sourcemaps",
+    "build": "ng build && npm run sentry:sourcemaps && npm run sentry:sourcemaps",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:SentryTest": "node dist/sentry-test/server/server.mjs",
-    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org fabiooow --project javascript-angular-3y ./dist && sentry-cli sourcemaps upload --org fabiooow --project javascript-angular-3y ./dist"
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org fabiooow --project javascript-angular-y3 ./dist/sentry-test && sentry-cli sourcemaps upload --org fabiooow --project javascript-angular-y3 ./dist/sentry-test"
   },
   "private": true,
   "dependencies": {
