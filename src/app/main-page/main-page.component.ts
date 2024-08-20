@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
   constructor(){
-    //throw new Error('Error Test');
+    throw new Error('Error Test');
 
     console.log("Hello")
   }
